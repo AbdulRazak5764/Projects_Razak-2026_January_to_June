@@ -1,0 +1,1 @@
+- [x] Create missing components: Education.jsx, Achievements.jsx, SoftSkills.jsx, Contact.jsx, Footer.jsx
