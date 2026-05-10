@@ -1,0 +1,47 @@
+============================================================
+AI Tools Used in This Presentation
+============================================================
+
+1. ChatGPT (GPT-4) - OpenAI
+   ---------------------------------------------------------
+   - Extracted exact paragraphs from NCERT Class 9 Science 
+     Chapter 4 "Describing Motion Around Us"
+   - Structured 5 slides with Left (NCERT text) and 
+     Right (visual) format
+   - Generated detailed visual descriptions for each slide
+   - Created summary tables and key insights
+
+2. DALL-E 3 / Bing Image Creator (Microsoft)
+   ---------------------------------------------------------
+   Used to generate these visuals:
+
+   Slide 1: Linear motion examples (swimming race, falling 
+            ball, car on highway, train on track)
+   
+   Slide 2: Distance vs displacement diagram with points 
+            O, B, A and distances 100m, 60m, 40m
+   
+   Slide 3: Swimming pool diagram with forward and backward 
+            arrows showing displacement = 0
+   
+   Slide 4: Bus diagram with green acceleration arrow and 
+            red deceleration arrow
+   
+   Slide 5: Circle with tangent arrows + marble activity 
+            showing circular to straight motion
+
+3. Canva AI
+   ---------------------------------------------------------
+   - Split screen layout (40% left NCERT text, 
+     60% right visual)
+   - Educational blue and white color theme
+   - Professional slide design
+
+4. Gamma.app
+   ---------------------------------------------------------
+   - Initial presentation structure generation
+
+============================================================
+Total Slides: 5
+NCERT Chapter: Describing Motion Around Us (Class 9)
+============================================================
