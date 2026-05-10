@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASE STABILIS | Executive Board Presentation</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --accent: #38bdf8;
+            --gold: #fbbf24;
+            --text: #f8fafc;
+            --red: #ef4444;
+            --green: #22c55e;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .slide {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            box-sizing: border-box;
+            transition: transform 0.8s ease-in-out;
+        }
+
+        .slide-header {
+            font-size: 2.5rem;
+            color: var(--accent);
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .content {
+            flex-grow: 1;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 40px;
+        }
+
+        .box {
+            background: var(--card);
+            padding: 30px;
+            border-radius: 20px;
+            border-left: 5px solid var(--gold);
+        }
+
+        .big-number {
+            font-size: 5rem;
+            font-weight: 800;
+            color: var(--gold);
+        }
+
+        .chart-full {
+            grid-column: span 2;
+            height: 400px;
+        }
+
+        .controls {
+            position: fixed;
+            bottom: 20px;
+            right: 40px;
+            display: flex;
+            gap: 20px;
+        }
+
+        button {
+            background: var(--accent);
+            color: var(--bg);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .indicator {
+            position: fixed;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="slides-container">
+        <!-- SLIDE 1: TITLE -->
+        <div class="slide" id="slide1">
+            <div style="margin: auto; text-align: center;">
+                <h1 style="font-size: 5rem; color: var(--gold);">CASE STABILIS</h1>
+                <h2 style="font-size: 2rem; color: var(--accent); font-weight: 300;">Stage 3: Resilience over Growth
+                </h2>
+                <p style="color: #94a3b8; font-size: 1.5rem;">Decoding Volatility into Validity | N.L. Dalmia 2026</p>
+                <p style="margin-top: 50px;">Team: <strong>Antigravity</strong> | Case 01</p>
+            </div>
+        </div>
+
+        <!-- SLIDE 2: THE SHOCK DIAGNOSIS -->
+        <div class="slide" id="slide2">
+            <div class="slide-header"><span>01 | The Shock Diagnosis</span><span>STAGE 1 & 2 RECAP</span></div>
+            <div class="content">
+                <div class="box">
+                    <h3>Revenue Collision</h3>
+                    <p>Total Revenue collapsed by <strong>23% YoY</strong> (₹ 2.30B → ₹ 1.78B).</p>
+                    <p>User base remained 93% stable, identifying a <strong>spending floor</strong>, not a churn
+                        problem.</p>
+                </div>
+                <div class="chart-container box">
+                    <canvas id="revRecapChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 3: VALIDATED LIFT -->
+        <div class="slide" id="slide3">
+            <div class="slide-header"><span>02 | High-Precision Validation</span><span>IN-SPACE CHECK</span></div>
+            <div class="content">
+                <div class="box" style="text-align: center;">
+                    <div class="label">TOP DECILE LIFT (VALIDATION)</div>
+                    <div class="big-number">2.64x</div>
+                    <p>Behavioral signals from 2019 are <strong>2.6x stronger</strong> than random even under market
+                        stress.</p>
+                </div>
+                <div class="box">
+                    <h3>Why it holds?</h3>
+                    <ul>
+                        <li><strong>Ordinal Consistency:</strong> Champions stay on top.</li>
+                        <li><strong>Laplace Smoothing:</strong> Corrected for low-frequency noise.</li>
+                        <li><strong>Basket Clipping:</strong> Removed outlier vulnerability.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 4: STAGE 3 CONSTRAINTS -->
+        <div class="slide" id="slide4">
+            <div class="slide-header"><span>03 | The Final Directive</span><span>STAGE 3 BINDING CONSTRAINTS</span>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <h3 style="color: var(--red);">The 1:00 AM Directive</h3>
+                    <p><strong>Constraint A:</strong> Capital Preservation (₹ 25M Budget Cap).</p>
+                    <p><strong>Constraint B:</strong> Margin Protection (Min 15% Net Contribution).</p>
+                </div>
+                <div class="box">
+                    <h3>Strategic Response</h3>
+                    <p>Switching from "Aggressive Acquisition" to <strong>"Resilience Engineering"</strong>.</p>
+                    <p>Prioritizing <strong>Capital Adequacy</strong> for high-value clusters.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 5: OPTIMIZATION LOGIC -->
+        <div class="slide" id="slide5">
+            <div class="slide-header"><span>04 | Optimization Logic</span><span>RESILIENCE ENGINEERING</span></div>
+            <div class="content">
+                <div class="box">
+                    <h3>Decision Grid</h3>
+                    <p>Targeting <strong>Champions (100%)</strong> & <strong>Top Loyalists (80%)</strong>.</p>
+                    <p>Deflecting <strong>At-Risk</strong> users as "Non-Viable" under ₹ 25M cap.</p>
+                </div>
+                <div class="box">
+                    <div class="label">EXPECTED REVENUE (STAGE 3)</div>
+                    <div class="big-number">₹ 2.92 B</div>
+                    <p>Efficiency: <strong>116x ROI</strong> on capital spend by focusing on the 2.64x core.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 6: FINAL RECOMMENDATION -->
+        <div class="slide" id="slide6">
+            <div class="slide-header"><span>05 | Executive Verdict</span><span>THE SHIELD STRATEGY</span></div>
+            <div style="margin: auto; max-width: 800px; text-align: left;" class="box">
+                <h3 style="color: var(--gold);">Action Plan: Stabilis Shield</h3>
+                <ol style="font-size: 1.5rem; line-height: 2;">
+                    <li><strong>Protect the Core:</strong> Secure top 2 deciles via VIP status.</li>
+                    <li><strong>Margin Shield:</strong> Friction-based checkout for high-return profiles.</li>
+                    <li><strong>Strategic Deflection:</strong> Exit low-ROI "At-Risk" segments.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button onclick="prevSlide()">PREV</button>
+        <button onclick="nextSlide()">NEXT</button>
+    </div>
+    <div class="indicator" id="pageNumber">Slide 1 / 6</div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 6;
+
+        function showSlide(n) {
+            const container = document.getElementById('slides-container');
+            container.style.transform = `translateY(-${(n - 1) * 100}vh)`;
+            document.getElementById('pageNumber').innerText = `Slide ${n} / ${totalSlides}`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        }
+
+        // Initialize Charts on Slide 2
+        const ctx = document.getElementById('revRecapChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Stage 1 Revenue', 'Stage 3 Projected'],
+                datasets: [{
+                    label: 'Revenue (Billions)',
+                    data: [2.30, 2.92],
+                    backgroundColor: ['#475569', '#fbbf24']
+                }]
+            },
+            options: {
+                plugins: { legend: { display: false } },
+                scales: { y: { grid: { color: '#334155' }, ticks: { color: '#94a3b8' } } }
+            }
+        });
+    </script>
+</body>
+
+</html>

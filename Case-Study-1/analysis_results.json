@@ -1,0 +1,26 @@
+{
+    "2019-20": {
+        "total_transactions": 417534,
+        "revenue": 2302892437.7799993,
+        "quantity": 11037464,
+        "unique_users": 4383,
+        "unique_products": 4031,
+        "return_val": 200036492.05,
+        "return_count": 9839
+    },
+    "2020-21": {
+        "total_transactions": 323055,
+        "revenue": 1779029496.4199996,
+        "quantity": 8506661,
+        "unique_users": 4068,
+        "unique_products": 3634,
+        "return_val": 72609314.22,
+        "return_count": 7262
+    },
+    "retention": {
+        "u1_count": 4383,
+        "u2_count": 4068,
+        "retained_count": 2653,
+        "retention_rate": 0.6052931781884554
+    }
+}
