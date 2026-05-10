@@ -16,3 +16,9 @@ env/
 
 # SIH_FINAL - Exclude large image datasets (too big for GitHub)
 SIH_FINAL/AI_PASHU_MITRA/SIH -Data Sets/
+
+# Ignore large media/archives
+*.mp4
+*.zip
+*.rar
+*.tar.gz
