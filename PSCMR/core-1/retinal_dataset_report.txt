@@ -1,0 +1,41 @@
+RETINAL IMAGES DATASET ANALYSIS REPORT
+============================================================
+
+Dataset Location: C:\Users\Shaik.AbdulRazak\OneDrive\Desktop\Rethinopathy-paper\Merged_Retinopathy17976
+Total Images: 35952
+Unique Patient IDs extracted: 0
+Patients with multiple scans: 1
+
+Top patients with most scans:
+  retina: 35952 scans
+
+Image formats found:
+  .jpg: 35952 images
+
+First 20 image files:
+  1. retina_00001.jpg
+  2. retina_00002.jpg
+  3. retina_00003.jpg
+  4. retina_00004.jpg
+  5. retina_00005.jpg
+  6. retina_00006.jpg
+  7. retina_00007.jpg
+  8. retina_00008.jpg
+  9. retina_00009.jpg
+ 10. retina_00010.jpg
+ 11. retina_00011.jpg
+ 12. retina_00012.jpg
+ 13. retina_00013.jpg
+ 14. retina_00014.jpg
+ 15. retina_00015.jpg
+ 16. retina_00016.jpg
+ 17. retina_00017.jpg
+ 18. retina_00018.jpg
+ 19. retina_00019.jpg
+ 20. retina_00020.jpg
+
+Recommendations for Core 1 implementation:
+1. ✅ Temporal data available - Can implement longitudinal t-DNA analysis
+2. Need to extract patient IDs and timepoints from filenames
+3. DR grades need to be extracted from filenames or separate CSV
+4. Image preprocessing required for consistent dimensions

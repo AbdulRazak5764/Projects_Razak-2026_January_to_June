@@ -1,0 +1,170 @@
+{
+  "patient_summary": {
+    "age": 58,
+    "medical_conditions": [
+      "Type 2 Diabetes",
+      "Hypertension"
+    ],
+    "medications": [
+      "Metformin 1000mg",
+      "Lisinopril 20mg"
+    ],
+    "allergies": [],
+    "diet_quality": "fair",
+    "lifestyle_factors": {
+      "smoking": false,
+      "alcohol": "moderate",
+      "exercise": "sedentary",
+      "stress": "high"
+    }
+  },
+  "retinal_analysis": {
+    "hologram_shape": [
+      64,
+      64,
+      32,
+      4
+    ],
+    "deficiency_regions_count": 1,
+    "average_adequacy": 0.03614052717700043,
+    "critical_regions": [
+      {
+        "id": 1,
+        "center": "[31.5 31.5 15.5]",
+        "volume_mm3": 0.13107200000000002,
+        "severity": 0.9638594728229996,
+        "voxel_count": 131072,
+        "adequacy_score": 0.03614052717700043
+      }
+    ]
+  },
+  "nutrient_analysis": {
+    "current_levels": {
+      "glucose": 0.5599999999999999,
+      "oxygen": 0.7200000000000001,
+      "vitamin_a": 0.48,
+      "lutein": 0.4,
+      "zeaxanthin": 0.32000000000000006,
+      "omega_3_dha": 0.44000000000000006,
+      "zinc": 0.52,
+      "vitamin_c": 1.0816000000000003,
+      "vitamin_e": 0.9464
+    },
+    "adequacy_scores": 0.03614052717700043,
+    "deficiency_regions": [
+      {
+        "id": 1,
+        "center": "[31.5 31.5 15.5]",
+        "volume_mm3": 0.13107200000000002,
+        "severity": 0.9638594728229996,
+        "voxel_count": 131072,
+        "adequacy_score": 0.03614052717700043
+      }
+    ]
+  },
+  "personalized_intervention": {
+    "dietary_recommendations": [
+      "Spinach (1 cup cooked): 20 mg",
+      "Kale (1 cup raw): 23 mg",
+      "Broccoli (1 cup cooked): 2 mg",
+      "Corn (1 cup): 2.2 mg",
+      "Orange peppers (1 cup): 1.7 mg",
+      "Egg yolks (2 large): 0.2 mg"
+    ],
+    "supplement_recommendations": [
+      {
+        "nutrient": "Lutein",
+        "dose_mg": 0.25,
+        "frequency": "Daily",
+        "duration": "3 months initially",
+        "rationale": "Addressing 96.4% deficiency severity"
+      },
+      {
+        "nutrient": "Zeaxanthin",
+        "dose_mg": 0.16,
+        "frequency": "Daily",
+        "duration": "3 months initially",
+        "rationale": "Addressing 77.1% deficiency severity"
+      }
+    ],
+    "lifestyle_modifications": [],
+    "monitoring_schedule": [
+      "Monthly A1C and glucose monitoring",
+      "Quarterly retinal hologram updates",
+      "Bi-annual comprehensive eye exam"
+    ],
+    "predicted_outcomes": [
+      "Expected 70-80% nutrient adequacy improvement in 3-6 months"
+    ],
+    "genetic_recommendations": [
+      {
+        "marker": "APOE4",
+        "nutrient": "omega_3_dha",
+        "recommendation": "Increase DHA intake by 50%",
+        "rationale": "Genetic variant affects omega_3_dha metabolism"
+      },
+      {
+        "marker": "MTHFR_C677T",
+        "nutrient": "folate",
+        "recommendation": "Use methylfolate supplements",
+        "rationale": "Genetic variant affects folate metabolism"
+      }
+    ],
+    "lifestyle_context": [
+      "Alcohol consumption affects B-vitamin metabolism - consider B-complex supplement",
+      "Sedentary lifestyle reduces circulation - prioritize cardiovascular exercise"
+    ]
+  },
+  "predicted_outcomes": [
+    {
+      "timeframe": "3-6 months",
+      "prediction": "Significant improvement in nutrient adequacy",
+      "confidence": "High",
+      "expected_improvement": "70-80% reduction in deficiency regions"
+    },
+    {
+      "timeframe": "2-3 years",
+      "prediction": "High risk of vision deterioration without intervention",
+      "confidence": "High",
+      "action": "Aggressive nutrient optimization required"
+    }
+  ],
+  "monitoring_schedule": [
+    {
+      "time": "Baseline",
+      "tests": [
+        "Comprehensive holographic analysis",
+        "Blood nutrient panel"
+      ]
+    },
+    {
+      "time": "1 month",
+      "tests": [
+        "Compliance check",
+        "Symptom assessment"
+      ]
+    },
+    {
+      "time": "3 months",
+      "tests": [
+        "Repeat holographic analysis",
+        "Blood nutrient panel"
+      ]
+    },
+    {
+      "time": "6 months",
+      "tests": [
+        "Comprehensive eye exam",
+        "Holographic comparison"
+      ]
+    },
+    {
+      "time": "Monthly",
+      "tests": [
+        "Glucose monitoring",
+        "Blood pressure check"
+      ]
+    }
+  ],
+  "visualization_generated": true
+}
