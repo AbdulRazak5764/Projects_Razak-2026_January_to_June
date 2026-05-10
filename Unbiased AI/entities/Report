@@ -1,0 +1,53 @@
+{
+    "name": "Report",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string"
+        },
+        "dataset_name": {
+            "type": "string"
+        },
+        "analysis_id": {
+            "type": "string"
+        },
+        "mitigation_id": {
+            "type": "string"
+        },
+        "report_type": {
+            "type": "string",
+            "enum": [
+                "bias_audit",
+                "compliance",
+                "executive_summary",
+                "technical"
+            ],
+            "default": "bias_audit"
+        },
+        "fairness_score": {
+            "type": "number"
+        },
+        "status": {
+            "type": "string",
+            "enum": [
+                "draft",
+                "final"
+            ],
+            "default": "draft"
+        },
+        "content": {
+            "type": "object"
+        },
+        "format": {
+            "type": "string",
+            "enum": [
+                "json",
+                "pdf"
+            ],
+            "default": "json"
+        }
+    },
+    "required": [
+        "title"
+    ]
+}

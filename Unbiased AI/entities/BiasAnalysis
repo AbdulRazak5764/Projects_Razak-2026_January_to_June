@@ -1,0 +1,71 @@
+{
+    "name": "BiasAnalysis",
+    "type": "object",
+    "properties": {
+        "dataset_id": {
+            "type": "string"
+        },
+        "dataset_name": {
+            "type": "string"
+        },
+        "model_name": {
+            "type": "string"
+        },
+        "sensitive_feature": {
+            "type": "string"
+        },
+        "target_column": {
+            "type": "string"
+        },
+        "fairness_score": {
+            "type": "number"
+        },
+        "statistical_parity": {
+            "type": "number"
+        },
+        "disparate_impact": {
+            "type": "number"
+        },
+        "equalized_odds_tpr": {
+            "type": "number"
+        },
+        "equalized_odds_fpr": {
+            "type": "number"
+        },
+        "demographic_parity_diff": {
+            "type": "number"
+        },
+        "group_metrics": {
+            "type": "object"
+        },
+        "feature_importance": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        },
+        "status": {
+            "type": "string",
+            "enum": [
+                "pending",
+                "running",
+                "completed",
+                "failed"
+            ],
+            "default": "pending"
+        },
+        "alert_level": {
+            "type": "string",
+            "enum": [
+                "none",
+                "low",
+                "medium",
+                "high"
+            ],
+            "default": "none"
+        }
+    },
+    "required": [
+        "dataset_id"
+    ]
+}

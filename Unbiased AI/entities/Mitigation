@@ -1,0 +1,56 @@
+{
+    "name": "Mitigation",
+    "type": "object",
+    "properties": {
+        "analysis_id": {
+            "type": "string"
+        },
+        "dataset_id": {
+            "type": "string"
+        },
+        "dataset_name": {
+            "type": "string"
+        },
+        "technique": {
+            "type": "string",
+            "enum": [
+                "reweighing",
+                "adversarial_debiasing",
+                "calibrated_equalized_odds",
+                "reject_option",
+                "disparate_impact_remover"
+            ]
+        },
+        "before_score": {
+            "type": "number"
+        },
+        "after_score": {
+            "type": "number"
+        },
+        "before_metrics": {
+            "type": "object"
+        },
+        "after_metrics": {
+            "type": "object"
+        },
+        "improvement": {
+            "type": "number"
+        },
+        "status": {
+            "type": "string",
+            "enum": [
+                "pending",
+                "running",
+                "completed",
+                "failed"
+            ],
+            "default": "pending"
+        },
+        "notes": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "analysis_id"
+    ]
+}

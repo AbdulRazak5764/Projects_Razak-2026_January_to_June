@@ -1,0 +1,56 @@
+{
+    "name": "Dataset",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Dataset name"
+        },
+        "description": {
+            "type": "string"
+        },
+        "file_url": {
+            "type": "string"
+        },
+        "file_name": {
+            "type": "string"
+        },
+        "row_count": {
+            "type": "number"
+        },
+        "column_count": {
+            "type": "number"
+        },
+        "columns": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "sensitive_features": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "target_column": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string",
+            "enum": [
+                "uploaded",
+                "analyzing",
+                "analyzed",
+                "error"
+            ],
+            "default": "uploaded"
+        },
+        "size_bytes": {
+            "type": "number"
+        }
+    },
+    "required": [
+        "name"
+    ]
+}
