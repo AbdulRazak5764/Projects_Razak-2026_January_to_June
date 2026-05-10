@@ -1,0 +1,20 @@
+{
+    "dataset_summary": {
+        "total_records_processed": 2071700,
+        "date_range_start": "01-03-2025",
+        "date_range_end": "31-10-2025"
+    },
+    "duplicate_detection_metrics": {
+        "total_duplicates_detected": 20686,
+        "duplicate_percentage": 1.0,
+        "model_accuracy": 1.0
+    },
+    "auto_approval_metrics": {
+        "total_auto_approved": 1741089,
+        "auto_approval_rate_percent": 84.04,
+        "model_accuracy": 0.9746
+    },
+    "workload_stats": {
+        "cases_needing_manual_review": 330611
+    }
+}
